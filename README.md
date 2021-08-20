@@ -10,6 +10,9 @@ Personal code (spanish) how to use code in unity
     ==========================scripts dentro del proyecto:=====================================
     ===========================================================================================
 
+    *_RaedMe:
+    *uso y anotaciones en c#
+    
     *programacion:
     *awake, start y update 
     *declaracion de variables
