@@ -93,6 +93,15 @@ public class ColleccionesYOperadores : MonoBehaviour
         {
 
         }
+
+        if (!true)
+        {
+            //declaracion basica del comando if else
+        }
+        else if (true) //declaracion basica para el comando else 
+        {
+
+        }
     }
     void Bucle_Foreach()
     {

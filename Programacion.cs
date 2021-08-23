@@ -19,6 +19,8 @@ public class Programacion : MonoBehaviour
     public float floatNumber = 5.4f; //declarando una variabla flotante 
     public double pi = 3.141567558; //los doubles no necesitan la f  y son mas precisos
 
+    public List<ColleccionesYOperadores> allTheLevelBlocks = new List<ColleccionesYOperadores>();
+
     private int numeroDeManzanas = 5;
 
     private void Awake() //el usuario aun no ve nada y se puede configurar en este momento, hacer que los coches no caigan  del cielo 
@@ -33,15 +35,26 @@ public class Programacion : MonoBehaviour
     {
         Debug.Log("Hola como estas"); //imprimiendo algo y que se vea en la consola 
         Debug.Log(playerName + playerScore); //imprimiendo un string con un numero 
+
+        int randomIndex = Random.Range(0, 10); //utilizando un entero que sea randon, recordar que no llega hasta el final, nunca dara 10
+        ColleccionesYOperadores block = (ColleccionesYOperadores)Instantiate(allTheLevelBlocks[randomIndex]); //instanciando y creando un objeto en unity desde un prefab 
+        block.transform.SetParent(this.transform, false); //haciendo que se quede como hijo del padre para no perder organizacion 
     }
 
     
     void Update() //el update se refresca 60 veces cada segundo, no es buena idea que se sobrecargue 
     {
+        
+
         if (Input.GetKeyUp(KeyCode.B)) 
         {
             Birthday(); //llamando al metodo Birthday 
         }
+    }
+
+    private void FixedUpdate() //el fixed update es en el cual se tiene que llevar todas las operaciones constantes de la fisica de el juego 
+    {
+        
     }
 
     void Birthday() //asi se pone una funcion que no devuelve nada, debe empezar con mayusculas 
