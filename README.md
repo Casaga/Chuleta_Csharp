@@ -10,20 +10,19 @@ Personal code (spanish) how to use code in unity
     ==========================scripts dentro del proyecto:=====================================
     ===========================================================================================
 
-    *_RaedMe:
-    *uso y anotaciones en c#
-    
     *programacion:
-    *awake, start y update 
+    *awake, start ,update, FixedUpdate
     *declaracion de variables
     *tienen algunos aspectos basicos de la programacion en c#
+    *instanciando objetos o creandolos 
+    *numeros aleatorios
     *sumar y guardar en la misma variable 
     *Crear metodos 
     *Sobrecargar metodos 
+   
     
     *ClassScript:
     *haciendo una clase en C# para programacion orientada a objetos 
-
     *ColleccionesYOperadores:
     *Arrays 
     *Listas
@@ -41,4 +40,17 @@ Personal code (spanish) how to use code in unity
     
     *Training:
     *usando la clase person con unos pequeños ejemplos 
+    
+    *RigidBody:
+    *Raycast y layers colisionando 
+    *uso de las componentes del rigidbody y como llamarlas 
+    *uso y cambio de las variables del animator 
+    *entrada de mouse en el juego(bonotes)
+    *OntriggerEnter
+    
+    *GameManagerTrining:
+    *lo que debe hacer un GameManager 
+    *enumerados 
+    *singleton (que un script sea llamdo por muchos otrsos scripts y solo existe un script de eso)
+    *persistencia de datos 
      */
